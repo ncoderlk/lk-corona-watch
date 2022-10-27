@@ -1,5 +1,5 @@
 async function getData() {
-  const res = await fetch('https://hp.health.gov.lk/api/get-current-statistical')
+  const res = await fetch('https://hpb.health.gov.lk/api/get-current-statistical')
   const data = await res.json()
   if (data.success) {
     console.log('CONNECTED TO THE API')
