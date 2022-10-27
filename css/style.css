@@ -50,3 +50,7 @@ nav h3 {
   color: transparent;
   background-image: linear-gradient(red, orange);
 }
+
+.source {
+  text-align: center;
+}
