@@ -29,8 +29,15 @@ async function getData() {
   }
 }
 getData().then(() => {
-  console.log('Data Loded')
+  console.log('No Errors Found...OK')
 }).catch((err) => {
   console.log(err)
-  document.body.innerHTML = `${err}`
+  document.getElementById('global-container').innerHTML = `Failed to Fetch Data <br> ${err}`
+  document.getElementById('local-container').innerHTML = ""
+  document.getElementById('time').innerHTML = ""
 })
+
+setInterval(() => {
+  getData()
+  console.log('UPDATED')
+}, 30000)
