@@ -41,3 +41,4 @@ setInterval(() => {
   getData()
   console.log('UPDATED')
 }, 30000)
+//Created By Sanchezlk
